@@ -76,6 +76,7 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .video {
   width: 100%;
 }
@@ -106,10 +107,13 @@ header {
 
 /* section feature */
 .feature {
-  max-width: 1240px;
   /* margin-top: 80px; */
   padding: 100px 16px 50px;
   margin: -50px auto 10px;
+}
+
+.container {
+  max-width: 1240px;
 }
 
 .feature-list {
@@ -118,18 +122,61 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.item {
+  box-shadow: 0 0 8px 4px #ccc;
+}
 .item-text {
   padding: 30px;
 }
-.item-text p:nth-child(1) {
+.category {
   font-size: 0.75rem;
   margin-bottom: 20px;
 }
-.item-text p:nth-child(2) {
+.info {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.item-text p:nth-child(3) {
+.date {
   font-size: 0.75rem;
   text-align: right;
+}
+
+/* section contact */
+.contact {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 50px 16px;
+}
+
+.contact-contents {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-texts {
+  width: 45%;
+}
+.contact-input {
+  width: 45%;
+}
+
+.input-info input {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.send-submit {
+  padding: 12px 0;
+  width: 200px;
+  color: white;
+  border: solid 1px white;
 }
